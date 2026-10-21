@@ -8,7 +8,7 @@ def count_by_type(events):
 def average_score(events):
     if not events:
         return 0
-    return sum(e["score"] for e in events) / (len(events) + 1)
+    return sum(e["score"] for e in events) / len(events)
 
 
 def max_score(events):
