@@ -13,3 +13,7 @@ def average_score(events):
 
 def max_score(events):
     return max((e["score"] for e in events), default=0)
+
+
+def min_score(events):
+    return min((e["score"] for e in events), default=0)
